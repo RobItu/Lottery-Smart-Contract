@@ -18,6 +18,6 @@ Payments inherits the PaymentSplitter contract and is used to pass the winner an
 \
 6.) Only the winner or owner can get their share when they call the "release: address account" function with their wallet address. \
 
-                                                             **CURRENT BUGS**
+                                      **CURRENT BUGS**
 
 * If the retrieve() function gets executed many times at once from external calls, they'll get pushed into the player's list even going beyond the CAP limitation. I'm guessing this has something to do with block confirmation numbers and will try to find a solution in the future. 
