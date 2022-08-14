@@ -14,10 +14,10 @@ Payments inherits the PaymentSplitter contract and is used to pass the winner an
 \
 4.) All functions will get called and executed automatically. \
 \
-5.) Once TX has been confirmed, the funds will be in the Payment contract whose address is found in sendFundsTo. Copy and paste this address in Remix's "At Address" function under the deploy tab to call the contract. Make sure you have selected the "Payments - contracts/Payments.sol" contract in the Contract's drop down menu.\
+5.) Once TX has been confirmed, the funds will be in the Payment contract whose address is found in sendFundsTo. Copy and paste this address in Remix's "At Address" function under the deploy tab to call the contract. **_Make sure you have selected the "Payments - contracts/Payments.sol" contract in the Contract's drop down menu._**\
 \
 6.) Only the winner or owner can get their share when they call the "release: address account" function with their wallet address. \
 
-                                      **CURRENT BUGS**
+                                             **CURRENT BUGS**
 
 * If the retrieve() function gets executed many times at once from external calls, they'll get pushed into the player's list even going beyond the CAP limitation. I'm guessing this has something to do with block confirmation numbers and will try to find a solution in the future. 
